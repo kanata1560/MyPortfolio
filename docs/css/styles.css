@@ -1,0 +1,184 @@
+body {
+  font-size: 16px;
+  color: #333333;
+}
+body a {
+  color: #333333;
+  text-decoration: none;
+}
+body header {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 95px;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+body header .header-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+body header .header-container .header-right nav li {
+  display: none;
+}
+body header .header-container .header-right .nav-button {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+  width: 38px;
+  height: 30px;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+body header .header-container .header-right .nav-button span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+}
+body header .header-container .header-right .nav-button span:nth-child(2) {
+  top: 13px;
+}
+body header .header-container .header-right .nav-button span:nth-child(3) {
+  top: 26px;
+}
+body main {
+  position: relative;
+  top: 95px;
+  background-color: #FFFDEE;
+}
+body main .top-page {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  background-color: #840202;
+}
+body main .top-page .top-page__left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 220px;
+}
+body main .top-page .top-page__left h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  color: white;
+}
+body main .top-page img {
+  width: 50%;
+  height: 350px;
+}
+body main .main-container {
+  width: 90%;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+body main .main-container .work .subtitle {
+  height: 40px;
+  background-color: #CE7476;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body main .main-container .work .subtitle h2 {
+  padding-left: 17px;
+}
+body main .main-container .work .work-wrap {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+body main .main-container .work .work-wrap .work-wrap__thumb img {
+  width: 90%;
+  height: 200px;
+}
+body main .main-container .work .work-wrap .work-wrap__text {
+  padding-top: 15px;
+  line-height: 1.5;
+}
+body main .main-container .profile {
+  padding-top: 40px;
+}
+body main .main-container .profile .subtitle {
+  height: 40px;
+  background-color: #CE7476;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body main .main-container .profile .subtitle h2 {
+  padding-left: 17px;
+}
+body main .main-container .profile .my-profile {
+  text-align: center;
+  line-height: 1.5;
+}
+body main .main-container .profile .my-profile img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+body main .main-container .profile .my-profile p:nth-child(4) {
+  font-size: 24px;
+}
+body main .main-container .profile .self__introduction {
+  padding: 20px 0;
+  line-height: 1.5;
+}
+body main .main-container .profile table {
+  line-height: 1.5;
+}
+body main .main-container .profile table th {
+  width: 15%;
+  text-align: left;
+}
+body main .main-container .profile a {
+  margin: 20px auto 0;
+  display: flex;
+  height: 30px;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  background-color: #840202;
+  color: white;
+}
+body main .main-container .contact {
+  padding-top: 40px;
+}
+body main .main-container .contact .subtitle {
+  height: 40px;
+  background-color: #CE7476;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body main .main-container .contact .subtitle h2 {
+  padding-left: 17px;
+}
+body main .main-container .contact .contact-form {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+body main .main-container .contact .contact-form a {
+  margin: 20px auto 0;
+  display: flex;
+  height: 30px;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  background-color: #4582F5;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@
   height: 40px;
   background-color: #CE7476;
   color: white;
+  font-size: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 40px;
@@ -11,7 +12,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   color: #333333;
   a {
     color: #333333;
@@ -32,6 +33,9 @@ body {
       justify-content: space-between;
       align-items: center;
       margin: 0 auto;
+      .header-left {
+        font-size: 24px;
+      }
 
       .header-right {
         nav {
@@ -93,6 +97,7 @@ body {
       img {
         width: 50%;
         height: 350px;
+        object-fit: cover;
       }
     }
     .main-container {
@@ -110,7 +115,6 @@ body {
           .work-wrap__thumb {
             img {
               width: 90%;
-              height: 200px;
             }
           }
           .work-wrap__text {
@@ -128,9 +132,10 @@ body {
           text-align: center;
           line-height: 1.5;
           img {
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
+            object-fit: cover;
           }
           p {
             &:nth-child(4) {
@@ -183,7 +188,6 @@ body {
       }
     }
   }
-
 
 
 }

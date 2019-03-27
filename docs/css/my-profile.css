@@ -20,28 +20,74 @@ body main .top-page img {
   height: 150px;
   object-fit: cover;
 }
+@media (min-width: 680px) {
+  body main .top-page img {
+    height: 250px;
+  }
+}
 body main .main-container {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
+@media (min-width: 680px) {
+  body main .main-container {
+    width: 70%;
+  }
+  body main .main-container .skill-desc__wrap {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+  }
+}
 body main .main-container .skill {
-  padding: 20px 0;
+  padding: 20px 0 0;
+}
+@media (min-width: 680px) {
+  body main .main-container .skill {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
 }
 body main .main-container .skill .skill-container {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 680px) {
+  body main .main-container .skill .skill-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 body main .main-container .skill .skill-container .skill-left {
-  width: 40%;
+  width: 30%;
   position: relative;
   top: -60px;
+}
+@media (min-width: 680px) {
+  body main .main-container .skill .skill-container .skill-left {
+    position: static;
+    width: 100%;
+  }
 }
 body main .main-container .skill .skill-container .skill-left img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
+}
+@media (min-width: 680px) {
+  body main .main-container .skill .skill-container .skill-left img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 800px) {
+  body main .main-container .skill .skill-container .skill-left img {
+    width: 250px;
+    height: 250px;
+  }
 }
 body main .main-container .skill .skill-container .skill-left p {
   position: relative;
@@ -52,9 +98,37 @@ body main .main-container .skill .skill-container .skill-right {
   width: 60%;
   line-height: 1.5;
 }
+@media (min-width: 680px) {
+  body main .main-container .skill .skill-container .skill-right {
+    width: 100%;
+  }
+}
+body main .main-container .skill .skill-text {
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+@media (min-width: 680px) {
+  body main .main-container .skill .skill-text {
+    position: static;
+    padding-top: 10px;
+    width: 100%;
+  }
+}
 body main .main-container .my-desc {
   padding: 20px 0;
   line-height: 1.5;
+}
+@media (min-width: 680px) {
+  body main .main-container .my-desc {
+    width: 50%;
+    position: relative;
+  }
+}
+@media (min-width: 800px) {
+  body main .main-container .my-desc {
+    top: 45px;
+  }
 }
 body main .main-container .my-link {
   padding: 20px 0;
@@ -73,6 +147,20 @@ body main .main-container .my-link .individual img {
 body main .main-container .history {
   line-height: 1.5;
 }
+body main .main-container .history .text {
+  position: relative;
+  left: 5px;
+  margin-bottom: 20px;
+  color: #24AAC2;
+  border-bottom: 2px solid #24AAC2;
+}
+@media (min-width: 680px) {
+  body main .main-container .history {
+    padding-top: 30px;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 body main .main-container .history dl {
   margin-bottom: 15px;
 }
@@ -83,6 +171,7 @@ body main .main-container .history dt {
 }
 body main .main-container .history dt .year {
   width: 20%;
+  color: #24AAC2;
 }
 body main .main-container .history dt p {
   width: 70%;
@@ -95,7 +184,7 @@ body main .main-container .history dd {
 body main .main-container .back-button {
   text-decoration: none;
   display: flex;
-  width: 30%;
+  width: 120px;
   height: 30px;
   margin: 20px auto 0;
   justify-content: center;

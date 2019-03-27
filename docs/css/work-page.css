@@ -17,19 +17,40 @@ body main {
   padding-bottom: 20px;
 }
 body main .main-container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 680px) {
+  body main .main-container {
+    width: 80%;
+  }
 }
 body main .main-container h2 {
+  width: 80%;
+  margin: 0 auto;
   font-size: 20px;
   text-align: center;
   vertical-align: middle;
-  padding: 10px 0;
+  padding: 30px 0 10px;
   border-bottom: 2px solid #333333;
 }
+@media (min-width: 680px) {
+  body main .main-container h2 {
+    width: 60%;
+    padding: 60px 0 10px;
+  }
+}
 body main .main-container img {
-  width: 100%;
+  width: 80%;
+  height: auto;
   padding: 20px 0;
+  margin: 0 auto;
+}
+@media (min-width: 680px) {
+  body main .main-container img {
+    width: 60%;
+  }
 }
 body main .main-container .work-text {
   line-height: 1.5;
@@ -38,7 +59,7 @@ body main .main-container .work-text {
 body main .main-container a {
   text-decoration: none;
   display: flex;
-  width: 30%;
+  width: 120px;
   height: 30px;
   margin: 20px auto 0;
   justify-content: center;

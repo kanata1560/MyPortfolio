@@ -1,3 +1,11 @@
+$pc: 680px;
+
+@mixin pc {
+  @media(min-width: ($pc)) {
+    @content;
+  }
+}
+
 
 body {
   font-size: 14px;
@@ -16,19 +24,34 @@ body {
     background-color: #FFFDEE;
     padding-bottom: 20px;
     .main-container {
-      width: 80%;
+      width: 60%;
       margin: 0 auto;
+      text-align: center;
+      @include pc {
+        width: 80%;
+      }
       h2 {
+        width: 80%;
+        margin: 0 auto;
         font-size: 20px;
         text-align: center;
         vertical-align: middle;
-        padding: 10px 0;
+        padding: 30px 0 10px;
         border-bottom: 2px solid #333333;
+        @include pc {
+          width: 60%;
+          padding: 60px 0 10px;
+        }
       }
       img {
-        width: 100%;
-
+        width: 80%;
+        // max-width: 400px;
+        height: auto;
         padding: 20px 0;
+        margin: 0 auto;
+        @include pc {
+          width: 60%;
+        }
       }
       .work-text {
         line-height: 1.5;
@@ -37,7 +60,7 @@ body {
       a {
         text-decoration: none;
         display: flex;
-        width: 30%;
+        width: 120px;
         height: 30px;
         margin: 20px auto 0;
         justify-content: center;

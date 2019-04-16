@@ -6,147 +6,132 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>WakanaPortfolio</title>
+  <title>ryotawakana</title>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <div class="header-left">
-        <p>Wakana</p>
-      </div>
-
-        <nav id="js-nav">
-          <ul class="header-right">
-            <li>
-              <a href="#">トップ</a>
-            </li>
-            <li>
-              <a href="#">作品</a>
-            </li>
-            <li>
-              <a href="#">プロフィール</a>
-            </li>
-            <li>
-              <a href="#">お問い合わせ</a>
-            </li>
-          </ul>
-        </nav>
-
-        <a class="nav-button" id="js-nav-button" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+    <div class="header-logo">
+      <p>wakana</p>
     </div>
+
+    <!-- pcナビ -->
+    <div class="header-nav">
+      <nav id="js-nav">
+        <ul>
+          <li>
+            <a href="">作品</a>
+          </li>
+          <li>
+            <a href="">プロフィール</a>
+          </li>
+          <li>
+            <a href="">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>  <!-- header-nav -->
+
+      <!-- スマホナビ -->
+      <a href="#" class="nav-button" id="js-nav-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
   </header>
 
-
-    <main>
-
-      <section class="top-page">
-        <div class="top-page__left">
-          <h1>Wakana<br>Ryota<br>PORT<br>FOLIO</h1>
-        </div>
+  <main>
+    <section class="top">
+      <div class="top-text">
+        <h1>Wakana<br>Ryota<br>PORT<br>FOLIO</h1>
+      </div>
+      <div class="top-img">
         <img src="img/sample.jpg" alt="">
-      </section>
+      </div>
+    </section> <!-- top -->
 
-      <div class="main-container">
-        <section class="work">
-          <div class="subtitle">
-            <h2>作品</h2>
+    <section class="work">
+      <div class="sub-title">
+        <h2>作品</h2>
+      </div>
+
+      <div class="work-wrap">
+        <div class="work-content">
+          <div class="work-thumb"><a href="work-page.html"><img src="img/sample.jpg" alt=""></a></div>
+          <div class="work-text">
+            <p>作成日</p>
+            <a href="work-page.html">作品名</a>
           </div>
-          <div class="work-wrap">
-            <div class="work-content">
-              <div class="work-wrap__thumb"><a href="work-page.html"><img src="img/sample.jpg" alt=""></a></div>
-              <div class="work-wrap__text">
-                <p>3月3日</p>
-                <a href="work-page.html">作品名</a>
-              </div>
-            </div>
+        </div>
 
-            <div class="work-content">
-              <div class="work-wrap__thumb"><a href="work-page.html"><img src="img/sample.jpg" alt=""></a></div>
-              <div class="work-wrap__text">
-                <p>3月3日</p>
-                <a href="work-page.html">作品名</a>
-              </div>
-            </div>
+        <div class="work-content">
+          <div class="work-thumb"><a href="work-page.html"><img src="img/sample.jpg" alt=""></a></div>
+          <div class="work-text">
+            <p>作成日</p>
+            <a href="work-page.html">作品名</a>
           </div>
-        </section>
+        </div>
+      </div>  <!-- work-wrap -->
+    </section> <!-- work -->
 
-        <section class="profile">
-          <div class="subtitle">
-            <h2>プロフィール</h2>
+    <section class="profile">
+      <div class="sub-title">
+        <h2>プロフィール</h2>
+      </div>
+
+      <div class="profile-wrap">
+        <div class="profile-main">
+          <img src="img/sample.jpg" alt="">
+          <div class="profile-main__text">
+            <p>専修大学</p>
+            <p>経営学部　経営学科</p>
+            <p>若菜　凌大</p>
           </div>
-          <div class="my-profile__wrap">
-            <div class="my-profile">
-              <div class="avatar">
-                <span><img src="img/wakana1.jpg" alt=""></span>
-              </div>
-              <div class="my-profile__text">
-                <p>専修大学</p>
-                <p>経営学部　経営学科</p>
-                <p class ="big-text">若菜　凌大</p>
-              </div>
-            </div>
-            <div class="sub-profile">
-              <div class="self__introduction">
-                <p>1997年 11月 15日 愛知県生まれ 千葉県在住商業高校に通い大学では学部は文系ですが、ゼミナールで情報の勉強をしています。</p>
-              </div>
-              <table>
-                <tr>
-                  <th>資格:</th>
-                  <td>応用情報技術者試験　基本情報技術者試験  秘書技能検定２級　準中型自動車免許</td>
-                </tr>
-                <tr>
-                  <th>趣味:</th>
-                  <td>クイズ・スノーボード</td>
-                </tr>
-                <tr>
-                  <th>特技:</th>
-                  <td>ルービックキューブ</td>
-                </tr>
-              </table>
-              <div class="profile-button">
-                <a href="my-profile.html">詳細</a>
-              </div>
-            </div>
+        </div> <!-- profile-main -->
+
+        <div class="profile-sub">
+          <div class="profile-sub__text">
+            <p>1997年 11月 15日 愛知県生まれ 千葉県在住。商業高校に通い大学ではゼミナールで
+              情報の勉強をしています。</p>
+            <table>
+              <tr>
+                <th>資格:</th>
+                <td>応用情報技術者試験　基本情報技術者試験  秘書技能検定２級　準中型自動車免許</td>
+              </tr>
+              <tr>
+                <th>趣味:</th>
+                <td>クイズ・スノーボード</td>
+              </tr>
+              <tr>
+                <th>特技:</th>
+                <td>ルービックキューブ</td>
+              </tr>
+            </table>
           </div>
-        </section>
+          <a href="my-profile.html" class="link-button">詳細</a>
+        </div> <!-- profile-sub -->
+      </div>　<!-- profile-wrap -->
+    </section> <!-- profile -->
 
-        <section class="contact">
-          <div class="subtitle">
-            <h2>お問い合わせ</h2>
-          </div>
-          <div class="contact-form">
-            <div class="contact-form__name">
-              <p>お名前</p>
-              <input type="text">
-            </div>
+    <section class="contact">
 
-            <div class="contact-form__mail">
-              <p>メールアドレス</p>
-              <input type="text">
-            </div>
-
-            <div class="contact-form__desc">
-              <p>内容</p>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-
-            </div>
-            <div class="contact-button">
-              <a href="#">送信</a>
-            </div>
-          </div>
-        </section>
+    </section> <!-- contact -->
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-link">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <iframe class="facebook-button" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwakana00.sub.jp%2F&width=83&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId" width="83" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
       </div>
-    </main>
-
-    <footer>
-      <p>pcへ</p>
-    </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+      <div class="above" id="above-button">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

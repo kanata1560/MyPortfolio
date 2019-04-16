@@ -5,25 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/work-page.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>ryotawakana</title>
 </head>
 <body>
-  <header>
-    <h1>Wakana</h1>
-  </header>
-  <main>
-    <div class="main-container">
-      <h2>作品名</h2>
-      <img src="img/sample.jpg" alt="">
-      <div class="work-text">
-        <p>製作期間</p>
-        <p>使用言語</p>
-        <p>説明</p>
-      </div>
-      <a href="index.html" class="back-button">戻る</a>
+  <header class="center">
+    <div class="header-logo">
+      <p>wakana</p>
     </div>
+
+    <!-- pcナビ -->
+    <div class="header-nav hidden">
+      <nav id="js-nav">
+        <ul>
+          <li>
+            <a href="">作品</a>
+          </li>
+          <li>
+            <a href="">プロフィール</a>
+          </li>
+          <li>
+            <a href="">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>  <!-- header-nav -->
+
+      <!-- スマホナビ -->
+      <a href="#" class="nav-button hidden" id="js-nav-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+  </header>
+
+  <main>
+      <h2 class="work-page-title">作品名</h2>
+      <div class="work-page-content">
+        <img src="img/sample.jpg" alt="">
+        <div class="work-page-content-text">
+          <p>製作期間</p>
+          <p>使用言語</p>
+          <p>説明</p>
+        </div>
+        <a href="index.html" class="link-button">戻る</a>
+      </div>
   </main>
 
+  <footer>
+    <div class="footer-content">
+      <div class="footer-link">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <iframe class="facebook-button" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwakana00.sub.jp%2F&width=83&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId" width="83" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+      </div>
+      <div class="above" id="above-button">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

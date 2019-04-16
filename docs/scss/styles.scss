@@ -168,6 +168,7 @@ main {
     height: 100%;
     background-color: #333333;
     img {
+      opacity: 0.8;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -513,10 +514,14 @@ footer {
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
+  p {
+    display: inline-block;
+  }
   @include pc{
     width: 100%;
   }
   .individual {
+    width: 30%;
     text-align: center;
   }
 }
